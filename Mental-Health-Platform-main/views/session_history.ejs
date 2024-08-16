@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add Bootstrap CSS link -->
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="pages/styles.css">
+ 
+</head>
+<body>
+    <!-- Use "navbar navbar-expand-lg navbar-light bg-light" to create the horizontal navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Mindcare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/About">About Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/Blogs">Blogs<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/psychologist">Psychologist<span class="sr-only">(current)</span></a>
+                </li>
+                <!--
+                <li class="nav-item active">
+                  <a class="nav-link" href="/session">Session<span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        functionality
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                        <a class="dropdown-item" href="User.html">Gallery</a>
+                        <a class="dropdown-item" href="/Psychologist">Psychologist</a>
+                        
+                    </div>
+                </li>
+              -->
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <!-- Add "Login" and "Sign Up" links -->
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/signup">Sign Up</a>
+                </li>-->
+            </ul>
+        </div>
+    </nav>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form action="/session_history" method="post">
+        <label for="psychologistId">Psychologist ID:</label>
+        <input type="text" id="psychologistId" name="psychologistId" required>
+        <button type="submit">Show Session History</button>
+    </form> -->
+    
+    
+
+    <div class="container">
+        <% if (sessions) { %>
+          <h1>Session History</h1>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th><%= sessionType === 'psychologist' ? 'Psychologist Name' : 'Client Name' %></th>
+              <th>Session Time</th>
+              <th>Report</th>
+            </tr>
+            <!-- Repeat the following row for each session -->
+            <% sessions.forEach(session => { %>
+              <tr>
+                <td><%= session.session_date %></td>
+                <td><%= sessionType === 'psychologist' ? session.psy_name : session.name %></td>
+                <td><%= session.session_time %></td>
+                <td><a href="/session_history/user/report/<%=session.session_id%>">REPORT</a></td>
+              </tr>
+            <% }); %>
+          </table>
+        <% } else { %>
+          <p>No session history found for this <%= sessionType === 'psychologist' ? 'psychologist' : 'user' %>.</p>
+        <% } %>
+      </div>
+      
+
+</body>
+</html>

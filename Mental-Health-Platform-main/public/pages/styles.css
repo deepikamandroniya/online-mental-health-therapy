@@ -1,0 +1,228 @@
+.content{
+    background-color: rgb(156, 216, 216);
+}
+
+.row .g-3{
+   background-color: blue;
+}
+
+.form-control{
+    width:400px;
+   
+}
+img{
+    width: 1500px;
+}
+
+.blogcontainer{
+    color:white;
+   background-image: url("dark-gradient.jpg");
+   background-repeat: no-repeat;
+    background-size: cover;
+}
+.page{
+    color:white;
+    background-image: url("brain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-session{
+    color:black;
+    background-image: url("google-meet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-secondary {
+    color: #343a40;
+    background-color: #fff;
+    border-color: #6c757d;
+}
+.signup{
+    background-image: url("psychology.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
+}
+.img-thumbnail {
+    padding: .25rem;
+    /* background-color: #d29292; */
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    height: 300px;
+    width: 400px;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 100%;
+    word-wrap: break-word;
+    /*background-color: #fff;*/
+    background-image: url("images.jpeg");
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    color:black;
+}
+
+
+.d-flex{
+    justify-content: center;
+}
+  
+  .column-about{
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card-about{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container-about{
+    padding: 0 16px;
+  }
+  
+  .container-about::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title-about {
+    color: grey;
+  }
+  
+  .button-about {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button-about:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column-about {
+      width: 100%;
+      display: block;
+    }
+  }
+.row g-0{
+    background-color: aqua;
+    font-size: medium;
+}
+
+.card1 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 100%;
+    word-wrap: break-word;
+    /*background-color: #fff;*/
+    background-image: url("images1.jpeg");
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    color:black;
+}
+
+/*17-09-2023 start*/
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: .25rem;
+  margin-top: 1rem;
+}
+
+.card1n {
+  border: 1px solid black;
+  background-color: white;
+  padding: .5rem;
+}
+
+.card1n > .header1n {
+  margin-bottom: .25rem;
+}
+
+.card1n > .body1n {
+  font-size: .8rem;
+  color: #777;
+}
+
+.hide {
+  display: none;
+}
+
+/*17-09-2023 end*/
+
+/*02-10-2023 :start*/
+
+.report_box{
+  padding-left:350px;
+  font-size:18px;
+  
+}
+
+
+
+/* Style for the "comment-container" */
+.comment-container {
+  background-color: #29a5bb;
+  border: 1px solid #131212;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Style for the "comment-item" */
+.comment-item {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e14141;
+  border: 1px solid #3acf47;
+  border-radius: 5px;
+}
+
+.comment-item p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.comment-item h4 {
+  font-size: 14px;
+  color: #472dbc;
+  margin: 5px 0;
+}
